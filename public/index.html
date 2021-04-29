@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Stock Ticker App</title>
+    <meta name="description" content="COMP20 hw14, stock ticker app" />
+    <meta name="name" content="Mijael Maratuech Seminario" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Stock Ticker App</h1>
+    <h2>
+      Enter a company name OR a stock ticker. If both are provided, the search
+      will be by ticker.
+    </h2>
+    <form action="/api/stock/match" method="POST">
+      <label> Company Name: </label>
+      <input name="name" type="text" />
+      <br />
+      <label> Stock Ticker: </label>
+      <input name="ticker" type="text" />
+      <br />
+      <br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
